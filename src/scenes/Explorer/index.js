@@ -4,33 +4,51 @@ import  React, { PureComponent } from 'react'
 import { View, Text, StyleSheet } from 'react-native'
 import autobind from 'autobind-decorator'
 
-let { height } = Dimensions.get('window')
-
-header
-
 const style = StyleSheet.create({
   container: {
-    flexGrow:1,
-    flexDirection: 'column'
+    flex:1,
+    flexDirection: 'column',
+    justifyContent: 'space-between'
   },
-  profileinfo
-  header: {
-
+  row: {
+    flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginBottom: 10
   },
-  assets: {
-
+  profileInfo: {
+    flex: 1,
+    flexDirection: 'column',
+    justifyContent: 'center',
+    backgroundColor: '#17cdc2',
+    alignItems: 'center'
+  },
+  content: {
+    flex: 2.5,
+    flexDirection: 'column',
+    justifyContent: 'center',
+    backgroundColor: '#6bc425',
+    alignItems: 'center'
   }
 })
 
 @autobind
 export default class Explorer extends PureComponent {
+
+  static navigationOptions = {
+    title: 'Real Safe Explorer'
+  }
+
   render(){
     return(
-      <View style= {style.container}>
-        <View>
-          <Text> Here header! </Text>
+      <View style={style.container}>
+        <View style={style.profileInfo} >
+          <Text> Here profile info! </Text>
         </View>
-      <View>
+        <View style={style.content} >
+          <Text> Here profile info! </Text>
+        </View>
+      </View>
     )
   }
 }

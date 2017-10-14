@@ -21,6 +21,11 @@ const inputButtons = [
 // Creating our ReactCalculator component
 class ReactCalculator extends Component {
 
+    static navigationOptions = {
+      title: 'Reat Calculator'
+    }
+
+
     constructor(props){
         super(props)
 
