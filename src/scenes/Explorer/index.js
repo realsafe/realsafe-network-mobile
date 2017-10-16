@@ -1,8 +1,13 @@
 'use strict'
 
 import  React, { PureComponent } from 'react'
-import { View, Text, StyleSheet } from 'react-native'
+import { View, Text, StyleSheet, ScrollView } from 'react-native'
+import ProfileInfo from './components/ProfileInfo'
+
+
 import autobind from 'autobind-decorator'
+
+
 
 const style = StyleSheet.create({
   container: {
@@ -10,25 +15,17 @@ const style = StyleSheet.create({
     flexDirection: 'column',
     justifyContent: 'space-between'
   },
-  row: {
-    flex: 1,
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    marginBottom: 10
-  },
   profileInfo: {
     flex: 1,
     flexDirection: 'column',
-    justifyContent: 'center',
     backgroundColor: '#17cdc2',
+    justifyContent: 'center',
     alignItems: 'center'
   },
   content: {
-    flex: 2.5,
+    flex: 3,
     flexDirection: 'column',
-    justifyContent: 'center',
-    backgroundColor: '#6bc425',
-    alignItems: 'center'
+    backgroundColor: '#6bc425'
   }
 })
 
@@ -43,10 +40,73 @@ export default class Explorer extends PureComponent {
     return(
       <View style={style.container}>
         <View style={style.profileInfo} >
-          <Text> Here profile info! </Text>
+          <ProfileInfo />
         </View>
-        <View style={style.content} >
-          <Text> Here profile info! </Text>
+        <View style={style.content}>
+          <ScrollView
+          horizontal={false}
+          pagingEnabled={false}
+          scrollEnabled={true}
+          showsHorizontalScrollIndicator={true}
+          showsVerticalScrollIndicator={false}
+          >
+            <Text> Here Content info - start! </Text>
+            <Text> Here Content info! </Text>
+            <Text> Here Content info! </Text>
+            <Text> Here Content info! </Text>
+            <Text> Here Content info! </Text>
+            <Text> Here Content info! </Text>
+            <Text> Here Content info! </Text>
+            <Text> Here Content info! </Text>
+            <Text> Here Content info! </Text>
+            <Text> Here Content info! </Text>
+            <Text> Here Content info! </Text>
+            <Text> Here Content info! </Text>
+            <Text> Here Content info! </Text>
+            <Text> Here Content info! </Text>
+            <Text> Here Content info! </Text>
+            <Text> Here Content info! </Text>
+            <Text> Here Content info! </Text>
+            <Text> Here Content info! </Text>
+            <Text> Here Content info! </Text>
+            <Text> Here Content info! </Text>
+            <Text> Here Content info! </Text>
+            <Text> Here Content info! </Text>
+            <Text> Here Content info! </Text>
+            <Text> Here Content info! </Text>
+            <Text> Here Content info! </Text>
+            <Text> Here Content info! </Text>
+            <Text> Here Content info! </Text>
+            <Text> Here Content info! </Text>
+            <Text> Here Content info! </Text>
+            <Text> Here Content info! </Text>
+            <Text> Here Content info! </Text>
+            <Text> Here Content info! </Text>
+            <Text> Here Content info! </Text>
+            <Text> Here Content info! </Text>
+            <Text> Here Content info! </Text>
+            <Text> Here Content info! </Text>
+            <Text> Here Content info! </Text>
+            <Text> Here Content info! </Text>
+            <Text> Here Content info! </Text>
+            <Text> Here Content info! </Text>
+            <Text> Here Content info! </Text>
+            <Text> Here Content info! </Text>
+            <Text> Here Content info! </Text>
+            <Text> Here Content info! </Text>
+            <Text> Here Content info! </Text>
+            <Text> Here Content info! </Text>
+            <Text> Here Content info! </Text>
+            <Text> Here Content info! </Text>
+            <Text> Here Content info! </Text>
+            <Text> Here Content info! </Text>
+            <Text> Here Content info! </Text>
+            <Text> Here Content info! </Text>
+            <Text> Here Content info! </Text>
+            <Text> Here Content info! </Text>
+            <Text> Here Content info! </Text>
+            <Text> Here Content info - end!</Text>
+          </ScrollView>
         </View>
       </View>
     )

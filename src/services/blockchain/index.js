@@ -11,7 +11,7 @@ const makeBlockChainApi = conf => {
   const getRSO = spec => {
     return {
       name: 'Lower Manhattan Real Estate Trust',
-      token: 'LLC NYC18'
+      token: 'LLC NYC18',
       totalTokensIssued: 100000,
       numOfOwners: 17,
       createdDate: '2018-02-03T16:13:10+03:00',
